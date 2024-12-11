@@ -1,6 +1,6 @@
 {
     "name": "net.starci.cifarm-sdk.ts",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "displayName": "Ci Farm SDK (TypeScript)",
     "description": "This is the TypeScript implementation of the CiFarm SDK for Cocos or web-based projects.",
     "main": "dist/index.js",
