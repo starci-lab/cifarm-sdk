@@ -9,7 +9,8 @@
     "changelogUrl": "https://docs.cifarm.starci.net/changelog.html",
     "licensesUrl": "https://docs.cifarm.starci.net/licensing.html",
     "dependencies": {
-        "com.unity.json": "3.0.1"
+        "com.unity.json": "3.0.1",
+        "com.unity.modules.unitywebrequest": "1.0.0"
     },
     "keywords": [
         "Cifarm",
