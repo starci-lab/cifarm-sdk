@@ -1,0 +1,38 @@
+{
+    "name": "net.starci.cifarm-sdk.ts",
+    "version": "1.0.0",
+    "displayName": "Ci Farm SDK (TypeScript)",
+    "description": "This is the TypeScript implementation of the CiFarm SDK for Cocos or web-based projects.",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "test": "jest",
+        "clean": "rm -rf dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/starci/cifarm-sdk"
+    },
+    "keywords": [
+        "Cifarm",
+        "CifarmSDK",
+        "TypeScript",
+        "Cocos",
+        "CiFarm SDK"
+    ],
+    "author": {
+        "name": "CiFarm",
+        "email": "cifarm@gmail.com",
+        "url": "https://docs.cifarm.starci.net"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "typescript": "^4.9.4",
+        "jest": "^29.4.1",
+        "@types/jest": "^29.4.1"
+    },
+    "dependencies": {
+        "axios": "^1.2.3"
+    }
+}
