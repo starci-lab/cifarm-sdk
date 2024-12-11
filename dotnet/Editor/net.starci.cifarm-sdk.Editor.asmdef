@@ -1,0 +1,9 @@
+{
+    "name": "net.starci.cifarm-sdk.Editor",
+    "references": [
+        "net.starci.cifarm-sdk"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": ["Editor"],
+    "excludePlatforms": []
+}
