@@ -7,7 +7,7 @@ namespace StarCi.CiFarmSDK
 {
     public class ApiCaller
     {
-        private readonly string _baseUrl = "'http://localhost:3001/auth/message";
+        private readonly string _baseUrl = "https://6721b00d98bbb4d93ca948fe.mockapi.io/students";
 
         public ApiCaller()
         {
