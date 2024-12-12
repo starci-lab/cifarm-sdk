@@ -1,25 +1,21 @@
 {
-    "name": "net.starci.cifarm-sdk",
-    "version": "1.0.5",
-    "displayName": "Ci Farm SDK",
-    "description": "CiFarm SDK is a Unity SDK that allows you to integrate CiFarm services into your Unity project.",
+    "name": "net.starci.cifarm-unity-sdk",
+    "version": "1.0.6",
+    "displayName": "Ci Farm Unity SDK",
+    "description": "This is the .NET implementation of the CiFarm SDK for Unity.",
     "unity": "2019.1",
     "unityRelease": "0b5",
-    "documentationUrl": "https://docs.cifarm.starci.net/",
+    "documentationUrl": "https://docs.cifarm.starci.net/unity/",
     "changelogUrl": "https://docs.cifarm.starci.net/changelog.html",
     "licensesUrl": "https://docs.cifarm.starci.net/licensing.html",
-    "dependencies": {
-    },
+    "dependencies": {},
     "keywords": [
         "Cifarm",
         "CifarmSDK",
+        "Unity",
+        "Dotnet",
         "CiFarm SDK"
     ],
-    "scripts": {
-    "build:dotnet": "cd dotnet && npm run build",
-    "build:ts": "cd ts && npm run build",
-    "test": "npm run test:dotnet && npm run test:ts"
-  },
     "author": {
         "name": "CiFarm",
         "email": "cifarm@gmail.com",
