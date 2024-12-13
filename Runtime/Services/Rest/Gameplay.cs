@@ -21,7 +21,7 @@ namespace StarCi.CiFarmSDK.Services.Rest
         /// </summary>
         /// <param name="helloParams">HelloParams object containing query params.</param>
         /// <returns>A task containing the HelloResponse object.</returns>
-        public async Task<HelloResponse[]> CallHelloWorldApiAsync(HelloParams helloParams)
+        public async Task<HelloResponse[]> GetHelloWorld(HelloParams helloParams)
         {
             try
             {

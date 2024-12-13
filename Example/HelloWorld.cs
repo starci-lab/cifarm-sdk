@@ -23,13 +23,13 @@ public class HelloWorld : MonoBehaviour
         _restGameplayService = new RestGameplayService(httpClientService);
 
         // Create a request object for the Hello World API
-        var request = new HelloParams
+        var helloParams = new HelloParams
         {
             Email = null,
             Name = null
         };
 
-        var response = await _restGameplayService.CallHelloWorldApiAsync(request);
+        var response = await _restGameplayService.GetHelloWorld(helloParams);
 
         if (response != null && !string.IsNullOrEmpty(response.ToString()))
         {
