@@ -1,5 +1,6 @@
 using StarCi.CiFarmSDK.Configs;
 using StarCi.CiFarmSDK.Services.Rest;
+using StarCi.CiFarmSDK.Types;
 using StarCi.CiFarmSDK.Utils;
 using UnityEngine;
 
@@ -22,9 +23,10 @@ public class HelloWorld : MonoBehaviour
         _restGameplayService = new RestGameplayService(httpClientService);
 
         // Create a request object for the Hello World API
-        var request = new RestGameplayService.HelloRequest
+        var request = new HelloParams
         {
-            Text = "hello world!"
+            Email = null,
+            Name = null
         };
 
         var response = await _restGameplayService.CallHelloWorldApiAsync(request);

@@ -26,5 +26,20 @@ namespace StarCi.CiFarmSDK.Utils
 
             return queryBuilder.ToString();
         }
+
+        public static Dictionary<string, object> SerializeToDictionary<TObject>(TObject obj)
+        {
+            if (obj == null)
+                return null;
+
+            var dictionary = new Dictionary<string, object>();
+
+            foreach (var property in obj.GetType().GetProperties())
+            {
+                dictionary[property.Name] = property.GetValue(obj);
+            }
+
+            return dictionary;
+        }
     }
 }

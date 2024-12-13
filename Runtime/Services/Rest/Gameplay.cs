@@ -1,4 +1,5 @@
 using StarCi.CiFarmSDK.Configs;
+using StarCi.CiFarmSDK.Types;
 using StarCi.CiFarmSDK.Utils;
 using System;
 using System.Threading.Tasks;
@@ -18,15 +19,15 @@ namespace StarCi.CiFarmSDK.Services.Rest
         /// <summary>
         /// Call the Hello World API.
         /// </summary>
-        /// <param name="request">HelloRequest object containing request data.</param>
+        /// <param name="helloParams">HelloParams object containing query params.</param>
         /// <returns>A task containing the HelloResponse object.</returns>
-        public async Task<HelloResponse[]> CallHelloWorldApiAsync(HelloRequest request)
+        public async Task<HelloResponse[]> CallHelloWorldApiAsync(HelloParams helloParams)
         {
             try
             {
                 Debug.Log("Calling Hello World API...");
                 var response = await _httpClientService.GetAsync<HelloResponse[]>(
-                    BaseConfig.EndpointHelloWorld, null);
+                    BaseConfig.EndpointHelloWorld, StringUtils.SerializeToDictionary(helloParams));
 
                 Debug.Log($"API Response: ");
                 foreach (var item in response)
@@ -42,22 +43,5 @@ namespace StarCi.CiFarmSDK.Services.Rest
             }
         }
 
-        // DTOs for the Hello World API
-        public class HelloRequest
-        {
-            public string Text { get; set; }
-        }
-
-        public class HelloResponse
-        {
-            public string Date { get; set; }
-            public string Name { get; set; }
-            public string Email { get; set; } = string.Empty;
-            public string Gender { get; set; }
-            public string Address { get; set; }
-            public int IdMajor { get; set; }
-            public string Id { get; set; }
-
-        }
     }
 }
