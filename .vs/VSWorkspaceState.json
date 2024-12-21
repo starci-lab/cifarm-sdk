@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Documentation",
+    "\\Runtime",
+    "\\Runtime\\Configs",
+    "\\Runtime\\Services",
+    "\\Runtime\\Services\\Rest",
+    "\\Runtime\\Utils"
+  ],
+  "PreviewInSolutionExplorer": false
+}
