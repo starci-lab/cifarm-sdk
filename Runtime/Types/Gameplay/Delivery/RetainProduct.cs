@@ -2,6 +2,7 @@
 {
     public class RetainProductRequest
     {
+        public string DeliveringProductId { get; set; }
     }
 
     public class RetainProductResponse

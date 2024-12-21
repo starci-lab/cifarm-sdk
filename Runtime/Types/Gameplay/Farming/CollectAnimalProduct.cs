@@ -2,13 +2,10 @@
 {
     public class CollectAnimalProductRequest
     {
-        public string CropId { get; set; }
-        public string UserId { get; set; }
+        public string PlacedItemAnimalId { get; set; }
     }
 
     public class CollectAnimalProductResponse
     {
-        public string Status { get; set; }
-        public int Yield { get; set; }
     }
 }

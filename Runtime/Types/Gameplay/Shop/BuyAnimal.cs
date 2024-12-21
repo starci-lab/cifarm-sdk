@@ -1,15 +1,15 @@
-﻿namespace StarCi.CiFarmSDK.Types.Gameplay.Shop
+﻿using StarCi.CiFarmSDK.Types.Base;
+
+namespace StarCi.CiFarmSDK.Types.Gameplay.Shop
 {
     public class BuyAnimalRequest
     {
-        public string AnimalType { get; set; }
-        public int Quantity { get; set; }
-        public string UserId { get; set; }
+        public string AnimalId { get; set; }
+        public string PlacedItemBuildingId { get; set; }
+        public Position Position { get; set; }
     }
 
     public class BuyAnimalResponse
     {
-        public string Status { get; set; }
-        public int TotalCost { get; set; }
     }
 }

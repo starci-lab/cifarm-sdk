@@ -2,6 +2,7 @@
 {
     public class UseFertilizerRequest
     {
+        public string PlacedItemTileId { get; set; }
     }
 
     public class UseFertilizerResponse

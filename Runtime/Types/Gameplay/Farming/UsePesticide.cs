@@ -2,6 +2,7 @@
 {
     public class UsePesticideRequest
     {
+        public string PlacedItemTileId { get; set; }
     }
 
     public class UsePesticideResponse

@@ -1,14 +1,14 @@
-﻿namespace StarCi.CiFarmSDK.Types.Gameplay.Community
+﻿using StarCi.CiFarmSDK.Types.Base;
+
+namespace StarCi.CiFarmSDK.Types.Gameplay.Community
 {
-    public class ThiefAnimalProductRequest
+    public class ThiefAnimalProductRequest : NeighborUserIdRequest
     {
-        public string UserId { get; set; }
-        public string NeighborUserId { get; set; }
+        public string PlacedItemAnimalId { get; set; }
     }
 
     public class ThiefAnimalProductResponse
     {
-        public string Status { get; set; }
-        public int StolenAmount { get; set; }
+        public int Quantity { get; set; }
     }
 }

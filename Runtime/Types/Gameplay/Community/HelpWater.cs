@@ -1,13 +1,13 @@
-﻿namespace StarCi.CiFarmSDK.Types.Gameplay.Community
+﻿using StarCi.CiFarmSDK.Types.Base;
+
+namespace StarCi.CiFarmSDK.Types.Gameplay.Community
 {
-    public class HelpWaterRequest
+    public class HelpWaterRequest : NeighborUserIdRequest
     {
-        public string UserId { get; set; }
-        public string NeighborUserId { get; set; }
+        public string PlacedItemTileId { get; set; }
     }
 
     public class HelpWaterResponse
     {
-        public string Status { get; set; }
     }
 }
